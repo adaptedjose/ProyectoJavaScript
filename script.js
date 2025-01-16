@@ -1,3 +1,4 @@
+//Photo library
 document.addEventListener('DOMContentLoaded', () => {
     const carrusel = document.getElementById('carrusel');
     const images = carrusel.children;
@@ -28,3 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animación automática
     setInterval(irSiguiente, 3000); // Cambiar de imagen cada 3 segundos
   });
+
+  function openModal() {
+    document.getElementById('modal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.add('hidden');
+  }
