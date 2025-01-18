@@ -1,4 +1,4 @@
-//Photo library
+//Photo library functions
 document.addEventListener('DOMContentLoaded', () => {
     const carrusel = document.getElementById('carrusel');
     const images = carrusel.children;

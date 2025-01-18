@@ -8,14 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="w-full bg-[#D4C2FC] bg-opacity-90">
         <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between h-auto sm:h-[75px] p-4 sm:space-x-4">
-          <!-- Título del hotel -->
-          <h1 class="font-anybody font-bold text-xl sm:text-2xl text-purple-700 selection:bg-[#998FC7] flex flex-col items-center mb-4 sm:mb-0">
+          <!-- <h1 class="font-anybody font-bold text-xl sm:text-2xl text-purple-700 selection:bg-[#998FC7] flex flex-col items-center mb-4 sm:mb-0">
             <span class="block leading-none">Hotel</span>
             <span class="text-black text-opacity-80">El Rincón de Camila</span>
-          </h1>
-          
+         </h1> -->
+        <img class="w-18 h-16 rounded-full" src="./image_library/logoHotel.svg" alt="logoHotel">  
           <!-- Botones de navegación -->
           <div class="flex flex-wrap sm:space-x-4 space-y-2 sm:space-y-0">
             <a href="#inicio" class="font-anybody font-medium text-sm text-black bg-gray-100 hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
@@ -34,6 +34,7 @@
         </div>
     </nav>                  
     <main>
+        <!-- Photo library -->
         <div class="relative w-full mx-auto overflow-hidden">
             <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
               <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
@@ -45,6 +46,45 @@
               <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
                 <img class="w-full h-full object-cover" src="./image_library/fondoInicio_3.jpg" alt="fondoInicio_3">
               </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/hab_superiorKing.jpg" alt="hab_superiorKing">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/hab_estandarQueen.jpg" alt="hab_estandarQueen">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/hab_estandarTwin.jpg" alt="hab_estandarTwin.jpg">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/hab_juniorSuite.jpg" alt="hab_juniorSuite">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/fondoInicio_3.jpg" alt="fondoInicio_3">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/lobby.jpg" alt="lobby">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/jacuzzi.jpg" alt="jacuzzi">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/piscina.jpg" alt="piscina">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/recepcion.jpg" alt="recepcion">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/restaurante.jpg" alt="restaurante">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/spa.jpg" alt="spa">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/terraza.jpg" alt="terraza">
+              </div>
+              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+                <img class="w-full h-full object-cover" src="./image_library/zonasHumedas.jpg" alt="zonasHumedas">
+              </div>
             </div>
             <button id="botonAnterior" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 sm:left-8 sm:p-3">
               Prev.
@@ -52,20 +92,54 @@
             <button id="botonSiguiente" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 sm:right-8 sm:p-3">
               Sig.
             </button>
-          </div>
+        </div>
+        <div class="w-full h-1/2 sm:h-1/2"></div>
+
           
     </main>
-    <footer class="container flex w-screen bg-[#D4C2FC] bg-opacity-90">
-        A
+    <footer class="h-[100px] w-full bg-gray-200 sm:h-[100px] flex flex-col sm:flex-row justify-between items-center sm:items-start p-2">
+        <h1 class="font-anybody font-bold text-lg sm:text-xl lg:text-2xl text-purple-700 selection:bg-[#998FC7] flex flex-col sm:flex-row items-center sm:items-start mb-0 w-full text-center sm:text-left">
+            <span class="block leading-tight">Hotel</span>
+            <span class="text-black text-opacity-80">El Rincón de Camila</span>
+        </h1>
+        <!-- Sección principal: Contacto y Redes Sociales -->
+        <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-2 sm:gap-4 w-full">
+            <!-- Información de contacto -->
+            <div class="text-gray-800 flex-1 text-xs sm:text-sm">
+                <p>Tel: +57 (301) 500-4908</p>
+                <p>Email: hotelrincondecamila@bucaramanga.com</p>
+                <p>Dirección: Calle 35 #12-27</p>
+            </div>
+    
+            <!-- Redes sociales -->
+            <div class="flex gap-2 sm:gap-4">
+                <a href="#" class="text-blue-500 hover:text-blue-700">
+                    <img src="./image_library/facebook_icon.svg" alt="Facebook" class="h-5 w-5"/>
+                </a>
+                <a href="#" class="text-blue-400 hover:text-blue-600">
+                    <img src="./image_library/x_icon.svg" alt="X" class="h-5 w-5"/>
+                </a>
+                <a href="#" class="text-pink-500 hover:text-pink-700">
+                    <img src="./image_library/instagram_icon.svg" alt="Instagram" class="h-5 w-5"/>
+                </a>
+            </div>
+        </div>
+        <!-- Políticas de privacidad -->
+        <div class="mt-2 border-t border-gray-300 pt-2 text-gray-600 w-full flex justify-center sm:justify-start">
+            <p class="text-xs sm:text-sm text-center sm:text-left">
+                © 2025 Ejemplo. Todos los derechos reservados. 
+                <a href="#" class="text-blue-500 hover:underline">Políticas de Privacidad</a> | 
+                <a href="#" class="text-blue-500 hover:underline">Términos y Condiciones</a>
+            </p>
+        </div>
     </footer>
+    <!-- WhatsApp Sticky Button -->
     <a  
     href="https://web.whatsapp.com/"
     class="fixed bottom-4 left-4 flex items-center justify-center space-x-2"
     target="_blank">
         <div class="flex items-center space-x-2">
-            <!-- Icono de WhatsApp -->
-            <img src="./image_library/icons8-whatsapp.svg" alt="WhatsApp" class="w-10 h-10" />
-            <!-- Caja de texto -->
+            <img src="./image_library/whatsapp_icon.svg" alt="WhatsApp" class="w-10 h-10" />
             <div class="flex items-center bg-[#F9F5FF] p-2 rounded-lg shadow-lg">
                 <span class="text-sm text-black">¡Contáctanos!</span>
             </div>
