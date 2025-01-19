@@ -5,3 +5,8 @@
 .font-anybody{
     font-family: 'Anybody', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
