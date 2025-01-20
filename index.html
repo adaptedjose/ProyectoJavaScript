@@ -11,139 +11,193 @@
 </head>
 <body class="scroll-smooth">
     <!-- Navigation Bar -->
-    <nav class="w-full bg-[#D4C2FC] bg-opacity-90 fixed top-0 z-50">
+    <nav class="w-full bg-[#DAB49D] bg-opacity-90 fixed top-0 z-50">
         <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between h-auto sm:h-[75px] p-4 sm:space-x-4">
-            <!-- Previos title/logo -->
-            <!-- <h1 class="font-anybody font-bold text-xl sm:text-2xl text-purple-700 selection:bg-[#998FC7] flex flex-col items-center mb-4 sm:mb-0">
+            <!-- Previous title/logo -->
+            <!-- Choose logo or title  -->
+            <!-- <h1 class="font-anybody font-bold text-xl sm:text-2xl text-purple-700 selection:bg -[#998FC7] flex flex-col items-center mb-4 sm:mb-0">
                 <span class="block leading-none">Hotel</span>
                 <span class="text-black text-opacity-80">El Rincón de Camila</span>
             </h1> -->
-            <img class="w-18 h-16 rounded-full" src="./image_library/logoHotel.svg" alt="logoHotel">
-            <!-- Navigatiom buttons -->
+            <img class="w-18 h-16 rounded-full" src="./image_library/hotel_Logo.svg" alt="logoHotel">
+            <!-- Navigation buttons  -->
             <div class="flex flex-wrap sm:space-x-4 space-y-2 sm:space-y-0">
-                <a href="./index.html" class="font-anybody font-medium text-sm text-black bg-gray-100 hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
+                <a href="./index.html" class="font-anybody font-medium text-sm text-black bg-[#F3E9DC] hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
                     Inicio
                 </a>
-                <a href="./index_2.html" class="font-anybody font-medium text-sm text-black bg-gray-100 hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
+                <a href="./index_2.html" class="font-anybody font-medium text-sm text-black bg-[#F3E9DC] hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
                     Habitaciones
                 </a>
-                <a href="#contacto" class="font-anybody font-medium text-sm text-black bg-gray-100 hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
+                <a href="#contacto" class="font-anybody font-medium text-sm text-black bg-[#F3E9DC] hover:bg-gray-200 focus:ring-2 focus:ring-gray-300 rounded-lg px-4 py-2 transition duration-300 shadow-sm">
                     Contacto
                 </a>
                 <!-- <a href="javascript:void(0);" onclick="openModal()" class="font-anybody font-medium text-sm text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 rounded-lg px-4 py-2 transition duration-300 shadow-md">
                     Iniciar Sesión
                 </a> -->
-                <a href="javascript:void(0);" onclick="openModal()" class="font-anybody font-medium text-sm text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 rounded-lg px-4 py-2 transition duration-300 shadow-md">
+                <a href="javascript:void(0);" onclick="handleReservationClick()" class="font-anybody font-medium text-sm text-white bg-[#C08552] hover:ring-gray-300 focus:ring-4 focus:ring-brown-700 rounded-lg px-4 py-2 transition duration-300 shadow-md">
                   Reservas
-              </a>
+                </a>
             </div>
         </div>
     </nav>                    
     <main class="scroll-smooth">
-        <!-- Photo library -->
-        <div id="inicio" class="relative w-full mx-auto overflow-hidden mt-[75px]">
-            <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/fondoInicio_1.jpg" alt="fondoInicio_1">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/fondoInicio_2.jpg" alt="fondoInicio_2">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/fondoInicio_3.jpg" alt="fondoInicio_3">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/hab_superiorKing.jpg" alt="hab_superiorKing">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/hab_estandarQueen.jpg" alt="hab_estandarQueen">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/hab_estandarTwin.jpg" alt="hab_estandarTwin.jpg">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/hab_juniorSuite.jpg" alt="hab_juniorSuite">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/fondoInicio_3.jpg" alt="fondoInicio_3">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/lobby.jpg" alt="lobby">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/jacuzzi.jpg" alt="jacuzzi">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/piscina.jpg" alt="piscina">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/recepcion.jpg" alt="recepcion">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/restaurante.jpg" alt="restaurante">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/spa.jpg" alt="spa">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/terraza.jpg" alt="terraza">
-              </div>
-              <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
-                <img class="w-full h-full object-cover" src="./image_library/zonasHumedas.jpg" alt="zonasHumedas">
-              </div>
+      <!-- Photo library -->
+      <div id="inicio" class="relative w-full mx-auto overflow-hidden mt-[75px]">
+        <!-- Photos track div -->
+        <!-- Photos -->
+          <div class="flex transition-transform duration-500 ease-in-out" id="carrusel">
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Lobby1.jpg" alt="hotel_Lobby1">
             </div>
-            <button id="botonAnterior" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 sm:left-8 sm:p-3">
-              Prev.
-            </button>
-            <button id="botonSiguiente" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 sm:right-8 sm:p-3">
-              Sig.
-            </button>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Lobby2.jpg" alt="hotel_Lobby2">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Lobby3.jpg" alt="hotel_Lobby3">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/room_SuperiorKing.jpg" alt="room_SuperiorKing">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/room_StandardQueen.jpg" alt="room_StandardQueen">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/room_StandardTwin.jpg" alt="room_StandardTwin.jpg">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/room_JuniorSuite.jpg" alt="room_JuniorSuite">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_BackgroundLobby.png" alt="hotel_BackgroundLobby">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Lobby4.jpg" alt="hotel_Lobby4">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Jacuzzi.jpg" alt="hotel_Jacuzzi">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Pool.jpg" alt="hotel_Pool">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Reception.jpg" alt="hotel_Reception">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Restaurant.jpg" alt="hotel_Restaurant">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Spa.jpg" alt="hotel_Spa">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Terrace.jpg" alt="hotel_Terrace">
+            </div>
+            <div class="w-full h-64 sm:h-80 lg:h-96 flex-shrink-0">
+              <img class="w-full h-full object-cover" src="./image_library/hotel_Sauna.jpg" alt="hotel_Sauna">
+            </div>
+          </div>
+          <button id="botonAnterior" class="absolute left-4 top-1/2 -translate-y-1/2 bg-[#895737] bg-opacity-50 text-white p-2 rounded-full hover:bg-[#5E3023] sm:left-8 sm:p-3">
+            <
+          </button>
+          <button id="botonSiguiente" class="absolute right-4 top-1/2 -translate-y-1/2 bg-[#895737] bg-opacity-50 text-white p-2 rounded-full hover:bg-[#5E3023] sm:right-8 sm:p-3">
+            >
+          </button>
+      </div>
+      <!-- Welcoming section -->
+      <div id="lobby" class="py-12 bg-[#DAB49D]">
+        <div class="container mx-auto">
+          <div 
+          class="relative flex flex-col sm:flex-row items-center sm:items-start p-6 sm:p-12 bg-cover bg-center bg-no-repeat h-screen rounded-lg overflow-hidden" 
+          style="background-image: url('./image_library/hotel_BackgroundLobby.png');">
+                <!-- Texto a la derecha -->
+                <div class="sm:w-1/2 text-center sm:text-left text-black">
+                    <h2 class="text-3xl sm:text-4xl font-anybody mb-4 font-anybody">Bienvenido al Hotel Rincón de Camila</h2>
+                    <p class="text-lg mb-6">Experimenta la calidez y elegancia desde el momento en que entras. Nuestro lobby está diseñado para inspirar y relajar.</p>
+                </div>
+                <!-- Botón flotante -->
+                <!-- <div class="absolute sm:relative bottom-4 sm:bottom-auto right-4 sm:right-auto">
+                    <a href="#reservar" class="px-6 py-3 bg-blue-500 text-white font-bold rounded-lg shadow-lg hover:bg-blue-600 transition">Reservar Ahora</a>
+                </div> -->
+            </div>
         </div>
-        <!-- Welcoming section -->
-        <div class="container w-creen h-[450px] bg-white-700 p-4 sm:p-8">
-            Prueba
-        </div> 
-        <!-- Contact section -->
-        <div id="contacto" class="container w-creen h-[450px] bg-white-700 p-4 sm:p-8">
-            Prueba 2
-        </div> 
+    </div>
+    <!-- Contact section -->
+    <div class="bg-custom-light py-12">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8">
+          <h2 class="text-3xl font-bold text-custom-medium text-center font-anybody">Contáctanos</h2>
+          <p class="text-custom-dark text-center mt-2 font-anybody">Estamos aquí para ayudarte, no dudes en comunicarte con nosotros.</p>
+  
+          <div class="mt-10 flex flex-col md:flex-row justify-center gap-8">
+              <!-- Información de contacto -->
+              <div class="space-y-4 max-w-sm mx-auto text-center">
+                  <div>
+                      <h3 class="text-xl font-semibold text-custom-medium font-anybody">Dirección</h3>
+                      <p class="text-custom-dark font-anybody">Calle 25 #12-27, Bucaramanga, Colombia</p>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-semibold text-custom-medium font-anybody">Teléfono</h3>
+                      <a href="tel:+1234567890" class="text-blue-600 hover:underline font-anybody">+57 3015004908</a>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-semibold text-custom-medium font-anybody">Correo Electrónico</h3>
+                      <a href="mailto:info@hotel.com" class="text-blue-600 hover:underline font-anybody">elrincondecamila@hotel.com</a>
+                  </div>
+              </div>
+  
+              <!-- Formulario de contacto -->
+              <div class="bg-custom-dark p-6 shadow-md rounded-lg max-w-sm w-full mx-auto">
+                  <h3 class="text-xl font-semibold text-custom-light mb-4 font-anybody text-center">Envíanos un mensaje</h3>
+                  <form action="#" method="POST" class="space-y-4">
+                      <div>
+                          <label for="name" class="block text-sm font-medium text-custom-light font-anybody">Nombre</label>
+                          <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 mx-auto" placeholder="Tu nombre completo" required>
+                      </div>
+                      <div>
+                          <label for="email" class="block text-sm font-medium text-custom-light font-anybody">Correo Electrónico</label>
+                          <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 mx-auto" placeholder="Tu correo electrónico" required>
+                      </div>
+                      <div>
+                          <label for="message" class="block text-sm font-medium text-custom-light font-anybody">Mensaje</label>
+                          <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 mx-auto" placeholder="Escribe tu mensaje aquí" required></textarea>
+                      </div>
+                      <button type="submit" class="w-full bg-custom-medium text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 font-anybody">Enviar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
     </main>
     <!-- Footer -->
-    <footer class="h-[100px] w-full bg-gray-200 sm:h-[100px] flex flex-col sm:flex-row justify-between items-center sm:items-start p-2">
-        <!-- Hotel title  -->
-        <h1 class="font-anybody font-bold text-lg sm:text-xl lg:text-2xl text-purple-700 selection:bg-[#998FC7] flex flex-col sm:flex-row items-center sm:items-start mb-0 w-full text-center sm:text-left">
-            <span class="block leading-tight">Hotel</span>
-            <span class="text-black text-opacity-80">El Rincón de Camila</span>
-        </h1>
-        <!-- Social media -->
-        <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-2 sm:gap-4 w-full">
-            <!-- Contact information -->
-            <div class="text-gray-800 flex-1 text-xs sm:text-sm">
-                <p>Teléfono: +57 (301) 500-4908</p>
-                <p>Email: hotelrincondecamila@bucaramanga.com</p>
-                <p>Dirección: Calle 35 #12-27</p>
-            </div>
-            <!-- Social media logos -->
-            <div class="flex gap-2 sm:gap-4">
-                <a href="#" class="text-blue-500 hover:text-blue-700">
-                    <img src="./image_library/facebook_icon.svg" alt="Facebook" class="h-5 w-5"/>
-                </a>
-                <a href="#" class="text-blue-400 hover:text-blue-600">
-                    <img src="./image_library/x_icon.svg" alt="X" class="h-5 w-5"/>
-                </a>
-                <a href="#" class="text-pink-500 hover:text-pink-700">
-                    <img src="./image_library/instagram_icon.svg" alt="Instagram" class="h-5 w-5"/>
-                </a>
-            </div>
-        </div>
-        <!-- Privacy politics -->
-        <div class="mt-2 border-t border-gray-300 pt-2 text-gray-600 w-full flex justify-center sm:justify-start">
-            <p class="text-xs sm:text-sm text-center sm:text-left">
-                © 2025 Ejemplo. Todos los derechos reservados. 
-                <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE&ab_channel=Rickroll%2Cbutwithadifferentlink" class="text-blue-500 hover:underline">Políticas de Privacidad</a> | 
-                <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE&ab_channel=Rickroll%2Cbutwithadifferentlink" class="text-blue-500 hover:underline">Términos y Condiciones</a>
-            </p>
-        </div>
+    <footer class="h-[100px] w-full bg-[#DAB49D] sm:h-[100px] flex flex-col sm:flex-row justify-center items-center sm:items-start p-2">
+      <!-- Hotel title -->
+      <h1 class="font-anybody font-bold text-lg sm:text-xl lg:text-2xl text-[#5E3023] selection:bg-black-700 flex flex-col sm:flex-row items-center sm:items-start mb-0 w-full text-center sm:text-left">
+          <span class="block leading-tight">Hotel</span>
+          <span class="text-black text-opacity-80">El Rincón de Camila</span>
+      </h1>
+      
+      <!-- Social media -->
+      <div class="flex flex-col sm:flex-row justify-center items-center sm:items-start gap-2 sm:gap-4 w-full mt-2">
+          <!-- Social media logos -->
+          <div class="flex gap-4">
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                  <img src="./image_library/icon_Facebook.svg" alt="Facebook" class="h-5 w-5"/>
+              </a>
+              <a href="#" class="text-blue-400 hover:text-blue-600">
+                  <img src="./image_library/icon_X.svg" alt="X" class="h-5 w-5"/>
+              </a>
+              <a href="#" class="text-pink-500 hover:text-pink-700">
+                  <img src="./image_library/icon_Instagram.svg" alt="Instagram" class="h-5 w-5"/>
+              </a>
+          </div>
+      </div>
+      
+      <!-- Privacy politics -->
+      <div class="mt-2 border-t border-gray-300 pt-2 text-gray-600 w-full flex justify-center sm:justify-start">
+          <p class="text-xs sm:text-sm text-center sm:text-left font-anybody">
+              © 2025. Todos los derechos reservados. 
+              <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE&ab_channel=Rickroll%2Cbutwithadifferentlink" class="text-blue-500 hover:underline">Políticas de Privacidad</a> | 
+              <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE&ab_channel=Rickroll%2Cbutwithadifferentlink" class="text-blue-500 hover:underline">Términos y Condiciones</a>
+          </p>
+      </div>
     </footer>
     <!-- WhatsApp Sticky Button -->
     <a  
@@ -151,32 +205,42 @@
     class="fixed bottom-4 left-4 flex items-center justify-center space-x-2"
     target="_blank">
         <div class="flex items-center space-x-2">
-            <img src="./image_library/whatsapp_icon.svg" alt="WhatsApp" class="w-10 h-10" />
+            <img src="./image_library/icon_Whatsapp.svg" alt="WhatsApp" class="w-10 h-10" />
             <div class="flex items-center bg-[#F9F5FF] p-2 rounded-lg shadow-lg">
                 <span class="text-sm text-black">¡Contáctanos!</span>
             </div>
         </div>
     </a>
     <!-- 'Iniciar Sesión' modal -->
-    <div id="modal" class="hidden fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50">
-        <div class="bg-[#D4C2FC] rounded-lg shadow-lg w-full sm:w-1/3 p-6 relative">
-          <h2 class="font-anybody text-xl font-medium text-purple-700 mb-4 text-center">Iniciar Sesión</h2>
-          <form>
-            <div class="mb-6">
-              <label for="email" class="block text-sm font-anybody font-medium text-gray-700">Correo electrónico</label>
-              <input type="email" id="email" class="font-anybody mt-1 block w-full border-2 border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-purple-500 transition duration-200" placeholder="usuario@ejemplo.com">
-            </div>
-            <div class="mb-6">
-              <label for="password" class="block text-sm font-anybody font-medium text-gray-700">Contraseña</label>
-              <input type="password" id="password" class="mt-1 font-anybody block w-full border-2 border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-purple-500 transition duration-200" placeholder="*****">
-            </div>
-            <button type="submit" class="w-full bg-purple-600 font-anybody text-white rounded-lg py-2 hover:bg-purple-700 focus:ring-2 focus:ring-purple-300">Iniciar Sesión</button>
-          </form>
-      
-          <!-- Botón para cerrar el modal y regresar a la página principal (en la parte superior derecha) -->
-          <button onclick="window.location.href='/'" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 focus:ring-2 focus:ring-purple-300 text-xl">&times;</button>
+    <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 z-50">
+      <div class="modal-content bg-white rounded-lg p-6 mx-auto mt-24 w-96">
+        <!-- Modal Header -->
+        <div class="flex justify-between items-center mb-4">
+          <h2 id="modal-title" class="text-lg font-semibold">Iniciar sesión</h2>
+          <button onclick="closeModal()" class="text-red-500">&times;</button>
         </div>
-      </div>    
+    
+        <!-- Modal Body -->
+        <div id="modal-body">
+          <!-- Login Form -->
+          <div id="login-form">
+            <input type="text" id="username" placeholder="Usuario" class="border p-2 mb-3 w-full">
+            <input type="password" id="password" placeholder="Contraseña" class="border p-2 mb-3 w-full">
+            <button onclick="login()" class="w-full bg-purple-600 text-white py-2 rounded-lg">Iniciar sesión</button>
+            <p class="mt-2 text-sm text-center">¿No tienes cuenta? <a href="javascript:void(0);" onclick="switchToRegister()" class="text-purple-600">Regístrate aquí</a></p>
+          </div>
+    
+          <!-- Register Form -->
+          <div id="register-form" class="hidden">
+            <input type="text" id="new-username" placeholder="Nuevo usuario" class="border p-2 mb-3 w-full">
+            <input type="email" id="new-email" placeholder="Correo electrónico" class="border p-2 mb-3 w-full">
+            <input type="password" id="new-password" placeholder="Contraseña" class="border p-2 mb-3 w-full">
+            <button onclick="register()" class="w-full bg-purple-600 text-white py-2 rounded-lg">Registrarse</button>
+            <p class="mt-2 text-sm text-center">¿Ya tienes cuenta? <a href="javascript:void(0);" onclick="switchToLogin()" class="text-purple-600">Inicia sesión aquí</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

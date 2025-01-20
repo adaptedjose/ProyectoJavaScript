@@ -4,255 +4,349 @@
       "id": 1,
       "number": "101",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
     },
     {
       "id": 2,
       "number": "102",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
     },
     {
       "id": 3,
       "number": "103",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
-    }
-    ,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 4,
       "number": "104",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
-    }
-    ,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 5,
       "number": "105",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
-    }
-    ,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 6,
       "number": "106",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
-    }
-    ,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 7,
       "number": "107",
       "type": "Junior Suite",
-      "price": 50000,
+      "price": 80000,
       "availability": true,
-      "image": "/image_library/hab_juniorSuite.jpg"
-    }
-    ,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 8,
       "number": "201",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 9,
       "number": "202",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 10,
       "number": "203",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 11,
       "number": "204",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 12,
       "number": "205",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 13,
       "number": "206",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 14,
       "number": "207",
       "type": "Estándar Twin",
       "price": 180000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_StandardTwin.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 15,
       "number": "301",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 16,
       "number": "302",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 2,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 17,
       "number": "303",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 18,
       "number": "304",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 19,
       "number": "305",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 20,
       "number": "306",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 21,
       "number": "307",
       "type": "Suite",
       "price": 300000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_Suite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 22,
       "number": "401",
       "type": "Estándar Queen",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 23,
       "number": "402",
       "type": "Suite",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 24,
       "number": "403",
       "type": "Estándar Queen",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 25,
       "number": "404",
       "type": "Estándar Queen",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 26,
       "number": "405",
       "type": "Estándar Queen",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 27,
       "number": "406",
       "type": "Estándar Queen",
       "price": 450000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 28,
       "number": "501",
       "type": "Superior King",
       "price": 600000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 29,
       "number": "502",
       "type": "Superior King",
       "price": 600000,
-      "availability": true
-    }
-    ,
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
+    },
     {
       "id": 30,
       "number": "503",
       "type": "Superior King",
       "price": 600000,
-      "availability": true
+      "availability": true,
+      "image": "/image_library/room_JuniorSuite.jpg",
+      "capacity": 4,
+      "startDate": "",
+      "endDate": ""
     }
   ],
-  "algun elemento más como 'usuarios' ": [
+  "users": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "a",
+      "email": "a",
+      "password": "a",
+      "id": 1
+    },
+    {
+      "username": "b",
+      "email": "b",
+      "password": "b",
+      "id": 2
     }
   ],
-  "algun elemento más como 'usuarios' 2": {
-    "name": "typicode"
-  }
+  "reservations": [],
+  "showRooms": [
+
+  ]
 }

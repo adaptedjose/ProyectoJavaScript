@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
     <!-- Navigation bar -->
     <nav class="w-full bg-[#D4C2FC] bg-opacity-90 fixed top-0 z-50">
       <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between h-auto sm:h-[75px] p-4 sm:space-x-4">
@@ -39,9 +39,40 @@
       </div>
   </nav> 
   <!-- Welcoming section -->
-  <div class="container w-creen h-[450px] bg-white-700 p-4 sm:p-8 mt-[75px]">
-      Prueba
+  <div class="container mx-auto p-6">
+    <!-- Formulario para filtrar habitaciones -->
+    <form id="filter-form" class="mb-6 mt-[75px]">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label for="arrival" class="block text-gray-700">Fecha de llegada</label>
+          <input type="date" id="arrival" class="w-full border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label for="departure" class="block text-gray-700">Fecha de salida</label>
+          <input type="date" id="departure" class="w-full border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label for="people" class="block text-gray-700">Número de personas</label>
+          <input type="number" id="people" class="w-full border-gray-300 rounded p-2" min="1">
+        </div>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white font-medium py-2 mt-4 rounded-lg hover:bg-blue-600">
+        Buscar Habitaciones
+      </button>
+    </form>
+
+    <!-- Contenedor para mostrar las habitaciones disponibles -->
+    <div id="rooms-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Aquí se mostrarán las habitaciones disponibles -->
+    </div>
+
+    <!-- Contenedor para mostrar las reservas activas -->
+    <div id="reservations-container" class="mt-8">
+      <!-- Aquí se mostrarán las reservas activas -->
+    </div>
   </div>
+
+  <button onclick="logout()" class="mt-[100px]">Cerrar sesión</button>
   <!-- Footer -->
   <footer class="h-[100px] w-full bg-gray-200 sm:h-[100px] flex flex-col sm:flex-row justify-between items-center sm:items-start p-2">
       <!-- Hotel title  -->
@@ -110,7 +141,7 @@
         <!-- Botón para cerrar el modal y regresar a la página principal (en la parte superior derecha) -->
         <button onclick="window.location.href='/'" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 focus:ring-2 focus:ring-purple-300 text-xl">&times;</button>
       </div>
-    </div>    
+</div>    
   <script src="./script.js"></script> 
 </body>
 </html>
